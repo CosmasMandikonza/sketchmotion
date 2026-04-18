@@ -1,0 +1,642 @@
+[
+  {
+    "id": "TC001",
+    "title": "Reach authentication from landing page",
+    "description": "Verifies a prospect can navigate from the landing page to the authentication page successfully.",
+    "category": "Landing page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the primary call-to-action to sign in or get started"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the authentication page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Sign in with email/password and reach dashboard",
+    "description": "Verifies a user can sign in with email and password and is redirected to the protected dashboard.",
+    "category": "Email/password authentication",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Toggle to sign-in mode if needed"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the authentication form"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on the dashboard"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Redirect unauthenticated user from dashboard to auth",
+    "description": "Verifies an unauthenticated visitor cannot access the dashboard and is redirected to the authentication page.",
+    "category": "Protected dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the authentication page is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Dashboard loads boards list or empty state after login",
+    "description": "Verifies an authenticated user can open the dashboard and sees either a board grid or an empty state.",
+    "category": "Protected dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Toggle to sign-in mode if needed"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the authentication form"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation item to go to the dashboard if not already there"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify boards are displayed or an empty state is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Create a new board from the dashboard and land on its canvas",
+    "description": "Verifies an authenticated member can create a new board from the dashboard and is taken to the new board canvas successfully.",
+    "category": "Create and open board",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the dashboard to load"
+      },
+      {
+        "type": "action",
+        "description": "Trigger the create new board control"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on a board canvas view"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Open an existing board from the dashboard board list",
+    "description": "Verifies an authenticated member can open an existing board from the dashboard list and reach the correct canvas view.",
+    "category": "Create and open board",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the dashboard to load"
+      },
+      {
+        "type": "action",
+        "description": "Trigger the create new board control"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to return to the dashboard"
+      },
+      {
+        "type": "action",
+        "description": "Click the board item for the newly created board in the board list"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the user lands on a board canvas view"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Add a frame, sketch, and save edits to update the frame state",
+    "description": "Verifies an authenticated member can add a frame on the canvas, edit it in the sketch editor, save, and see the frame updated.",
+    "category": "Frame creation and editing",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the dashboard to load"
+      },
+      {
+        "type": "action",
+        "description": "Trigger the create new board control"
+      },
+      {
+        "type": "action",
+        "description": "Add a new frame to the canvas"
+      },
+      {
+        "type": "action",
+        "description": "Open the sketch editor for the frame"
+      },
+      {
+        "type": "action",
+        "description": "Draw on the sketch canvas"
+      },
+      {
+        "type": "action",
+        "description": "Save the sketch edits"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the frame shows an updated saved sketch state"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "AI polish can be triggered for a sketched frame and shows in-flight progress UI",
+    "description": "Verifies a member can start AI polish for a frame with a sketch and sees an in-progress state indicating the job started.",
+    "category": "Polished image save (AI polish)",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the sign-in form"
+      },
+      {
+        "type": "action",
+        "description": "Wait for the dashboard to load"
+      },
+      {
+        "type": "action",
+        "description": "Trigger the create new board control"
+      },
+      {
+        "type": "action",
+        "description": "Add a new frame to the canvas"
+      },
+      {
+        "type": "action",
+        "description": "Open the sketch editor for the frame"
+      },
+      {
+        "type": "action",
+        "description": "Draw on the sketch canvas"
+      },
+      {
+        "type": "action",
+        "description": "Save the sketch edits"
+      },
+      {
+        "type": "action",
+        "description": "Trigger the AI polish action for the frame"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the frame shows an in-flight or progress state for AI polish"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Start video generation after providing required prompt and style",
+    "description": "Verifies a member can open the AI panel on a newly created board, provide required prompt and style, start video generation, and see in-progress/job-started UI.",
+    "category": "Style-aware video generation",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the authentication form"
+      },
+      {
+        "type": "action",
+        "description": "Click the create board action"
+      },
+      {
+        "type": "action",
+        "description": "Open the AI panel on the canvas"
+      },
+      {
+        "type": "action",
+        "description": "Select a valid animation style"
+      },
+      {
+        "type": "action",
+        "description": "Fill a valid prompt into the prompt field"
+      },
+      {
+        "type": "action",
+        "description": "Start video generation"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an in-progress or job-started indicator is displayed for the generation"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "Enable public access and copy share URL",
+    "description": "Owner opens a board, opens Share, sets public access to view-with-link, verifies the share URL field contains /board/, clicks Copy, and sees a visible success state (e.g. Copied!) without asserting clipboard contents.",
+    "category": "Sharing and public board access",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth and sign in with {{LOGIN_USER}} / {{LOGIN_PASSWORD}}"
+      },
+      {
+        "type": "action",
+        "description": "Open an existing board from the dashboard (or create one if the list is empty)"
+      },
+      {
+        "type": "action",
+        "description": "Open the share UI via share-open-button"
+      },
+      {
+        "type": "action",
+        "description": "Set public access select to view (Anyone with link can view)"
+      },
+      {
+        "type": "assertion",
+        "description": "Public access select shows the Anyone with link can view option as selected"
+      },
+      {
+        "type": "assertion",
+        "description": "Share link input value contains the substring /board/"
+      },
+      {
+        "type": "action",
+        "description": "Click share-copy-link-button"
+      },
+      {
+        "type": "assertion",
+        "description": "Copy control shows visible success text such as Copied! (do not assert navigator.clipboard readback)"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC011",
+    "title": "Open a publicly shared board as an anonymous visitor",
+    "description": "Verifies a board with public access enabled can be opened in a fresh session via its share URL and loads as a read-only public view.",
+    "category": "Sharing and public board access",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the authentication form"
+      },
+      {
+        "type": "action",
+        "description": "Click the create board action"
+      },
+      {
+        "type": "action",
+        "description": "Open the share UI for the board"
+      },
+      {
+        "type": "action",
+        "description": "Enable public access for the board"
+      },
+      {
+        "type": "action",
+        "description": "Click the share link to open the public board view"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the board loads in a read-only public view"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC012",
+    "title": "Navigate to export UI and see presets and format options",
+    "description": "Verifies a member can reach the export page for a board and the export UI renders presets, format options, and a player area or empty state.",
+    "category": "Export page",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /auth"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_USER}} into the email field"
+      },
+      {
+        "type": "action",
+        "description": "Fill {{LOGIN_PASSWORD}} into the password field"
+      },
+      {
+        "type": "action",
+        "description": "Submit the authentication form"
+      },
+      {
+        "type": "action",
+        "description": "Click the create board action"
+      },
+      {
+        "type": "action",
+        "description": "Click the navigation to open the export UI"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify export presets and format options are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a video player area or an empty state is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC013",
+    "title": "Polish provider failure surfaces as user-visible error",
+    "description": "When the polish edge function returns an error, the user sees an error notification (floating-notification type error) rather than silent failure.",
+    "category": "Polish failure handling",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in and open a board with at least one sketched frame (or create sketch via editor)"
+      },
+      {
+        "type": "action",
+        "description": "Stub Supabase polish-sketch invoke to return an error response"
+      },
+      {
+        "type": "action",
+        "description": "Trigger single-frame polish (wand on frame)"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify floating-notification with data-notification-type=error and message containing Polish failed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC014",
+    "title": "Video generation failure shows inline error in AI panel",
+    "description": "When generate-video returns status error JSON, the AI panel shows data-ai-panel-error with the provider message.",
+    "category": "Video failure handling",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in and open a board where Generate Video is enabled (all frames polished with images)"
+      },
+      {
+        "type": "action",
+        "description": "Stub generate-video edge function to return { status: error, error: Simulated video failure }"
+      },
+      {
+        "type": "action",
+        "description": "Open Generate Video section and click ai-video-generate-button"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify [data-ai-panel-error] is visible with failure text"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC015",
+    "title": "Missing frame image blocks video generation with warning",
+    "description": "Frames without drawable images keep Generate Video disabled and show ai-video-frames-not-ready guidance.",
+    "category": "Video guard rails",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in, create a new board, add a frame without sketch/polish"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify ai-video-generate-button is disabled"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify ai-video-frames-not-ready mentions Missing images or Polish first"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC016",
+    "title": "Export page empty video list shows safe fallback copy",
+    "description": "When no videos exist for a board, export shows export-no-videos-hint instead of crashing.",
+    "category": "Export / metadata fallback",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in, open a board, navigate to /export/:boardId"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify data-testid export-no-videos-hint is visible with No videos generated yet"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC017",
+    "title": "Public view-only board disables editing affordances",
+    "description": "Anonymous user on /board/:id with public view sees canvas-read-only-banner and cannot use toolbar-add-frame.",
+    "category": "Sharing / read-only",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open a publicly shared view-only board URL in a fresh browser context without auth"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify canvas-read-only-banner is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify toolbar-add-frame is disabled"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC018",
+    "title": "Export route redirects unauthenticated users to auth",
+    "description": "Hitting /export/:boardId while logged out must land on /auth (protected route).",
+    "category": "Authorization",
+    "steps": [
+      {
+        "type": "action",
+        "description": "In a fresh context, navigate to /export/00000000-0000-0000-0000-000000000001"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify URL ends with /auth"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC019",
+    "title": "Frame persists on canvas after full page reload",
+    "description": "After adding a frame and reloading, at least one frame-card-* element remains.",
+    "category": "Persistence",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in, open board, add a frame via toolbar-add-frame"
+      },
+      {
+        "type": "action",
+        "description": "Reload the page and wait for Loading board to clear"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify locator [data-testid^=frame-card-] count is at least 1"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC020",
+    "title": "Invalid canvas board id shows Board Not Found state",
+    "description": "Navigating to /canvas/:invalidUuid as an authenticated user shows board-state-not-found or board-state-empty.",
+    "category": "Board loading / errors",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Sign in then go to /canvas/00000000-0000-0000-0000-000000000099"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify board-state-not-found or board-state-empty heading is visible"
+      }
+    ],
+    "priority": "High"
+  }
+]

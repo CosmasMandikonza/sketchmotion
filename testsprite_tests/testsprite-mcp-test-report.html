@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SketchMotion TestSprite Baseline Report</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09090b;
+        --panel: #111217;
+        --border: #23252d;
+        --text: #f4f4f5;
+        --muted: #b1b5c3;
+        --accent: #7dd3fc;
+        --success: #86efac;
+        --warn: #fcd34d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", sans-serif;
+        background: radial-gradient(circle at top, #161822 0%, var(--bg) 45%);
+        color: var(--text);
+      }
+
+      main {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 48px 24px 72px;
+      }
+
+      .panel {
+        background: color-mix(in srgb, var(--panel) 92%, white 8%);
+        border: 1px solid var(--border);
+        border-radius: 20px;
+        padding: 28px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
+      }
+
+      h1,
+      h2 {
+        margin: 0 0 16px;
+        line-height: 1.1;
+      }
+
+      p,
+      li {
+        color: var(--muted);
+        line-height: 1.65;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      .eyebrow {
+        color: var(--accent);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 12px;
+        margin: 24px 0 28px;
+      }
+
+      .stat {
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 16px 18px;
+        background: rgba(255, 255, 255, 0.02);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: 22px;
+        color: var(--text);
+      }
+
+      .good {
+        color: var(--success);
+      }
+
+      .warn {
+        color: var(--warn);
+      }
+
+      a {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="panel">
+        <div class="eyebrow">TestSprite Round 1 Baseline</div>
+        <h1>SketchMotion baseline report</h1>
+        <p>
+          This HTML report intentionally summarizes the initial TestSprite
+          baseline for SketchMotion's core product path. It is kept small and
+          public-repo-safe on purpose.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>12</strong>
+            <span>baseline tests executed</span>
+          </div>
+          <div class="stat">
+            <strong class="good">10</strong>
+            <span>passed on the first round</span>
+          </div>
+          <div class="stat">
+            <strong class="warn">2</strong>
+            <span>meaningful issues surfaced</span>
+          </div>
+        </div>
+
+        <h2>What the baseline covered</h2>
+        <ul>
+          <li>landing to auth</li>
+          <li>sign-in and dashboard access</li>
+          <li>board creation and board opening</li>
+          <li>frame creation and sketch editing</li>
+          <li>AI polish trigger</li>
+          <li>video generation trigger</li>
+          <li>share flow and public board access</li>
+          <li>export entry</li>
+        </ul>
+
+        <h2>Issues that mattered</h2>
+        <ul>
+          <li>
+            <strong>TC008:</strong> the AI polish affordance was too
+            hover-dependent for stable automation and discoverability.
+          </li>
+          <li>
+            <strong>TC010:</strong> the share-link copy flow needed stronger
+            selectors and more reliable interaction handling.
+          </li>
+        </ul>
+
+        <h2>Why this file is intentionally simple</h2>
+        <p>
+          The durable submission artifacts are the checked-in tests plus the
+          written QA documents:
+          <a href="./BUG_FIX_LOG.md">BUG_FIX_LOG.md</a> and
+          <a href="./TESTING_STRATEGY.md">TESTING_STRATEGY.md</a>.
+        </p>
+        <p>
+          This baseline report is preserved because it shows that SketchMotion
+          was already behaving like a real web application before the second
+          hardening round expanded into failure handling, invalid states,
+          persistence, and GLM-specific coverage.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
