@@ -2,181 +2,199 @@
 
 **SketchMotion is a storyboard-to-motion workspace for creative teams — built to turn rough frames into polished visuals, style-aware motion tests, and export-ready handoff in one place.**
 
-🚀 **Live App:** https://sketch-motion-main.vercel.app  
-🎥 **Demo Video:** https://www.youtube.com/watch?v=7nRd42cjbdw
+**🌐 Live App:** [https://sketch-motion-main.vercel.app](https://sketch-motion-main.vercel.app)
+**🎥 Demo Video:** [https://www.youtube.com/watch?v=7nRd42cjbdw](https://www.youtube.com/watch?v=7nRd42cjbdw)
 
 ---
 
-## ✨ What SketchMotion Is
+## Overview
 
 SketchMotion helps creative teams move from **rough storyboard ideas** to **review-ready visuals and motion** without breaking the workflow across disconnected tools.
 
-Instead of bouncing between:
-- whiteboards
-- docs
-- image generators
-- prompt notes
-- review threads
-- export tools
+Instead of bouncing between whiteboards, docs, image generators, prompt notes, review threads, and export tools, SketchMotion keeps the **board at the center** of the process.
 
-SketchMotion keeps the **board at the center** of the process.
+With SketchMotion, teams can:
 
-You can:
-- sketch directly in frames
-- polish rough visuals with AI
-- run storyboard-aware planning
-- revise the plan without restarting
-- generate style-aware motion
-- share boards in read-only mode
-- export from a stable finishing surface
+* sketch directly in frames
+* polish rough visuals with AI
+* run storyboard-aware planning
+* revise the plan without restarting
+* generate style-aware motion
+* share boards in read-only mode
+* export from a stable finishing surface
 
 ---
 
-## 🧩 The Problem
+## The Problem
 
 Most creative AI tools are good at generating something once.
 
-They are much worse at supporting the **actual workflow** around that output:
-- preserving sequence and framing
-- keeping revisions attached to the board
-- handling missing inputs cleanly
-- surviving provider failures
-- supporting review and export like real software
+They are much worse at supporting the actual workflow around that output:
 
-That creates a common failure mode:
+* preserving sequence and framing
+* keeping revisions attached to the board
+* handling missing inputs cleanly
+* surviving provider failures
+* supporting review and export like real software
 
-> teams end up with visuals, but not a dependable storyboard operating surface.
+That creates a familiar failure mode: teams end up with visuals, but not a dependable storyboard operating surface.
 
 SketchMotion was built to solve that.
 
 ---
 
-## 💡 Why SketchMotion Matters
+## Why SketchMotion Matters
 
-Storyboards are not just pictures.
+Storyboards are not just images. They carry:
 
-They carry:
-- direction
-- framing
-- continuity
-- timing
-- collaboration context
-- review intent
+* direction
+* framing
+* continuity
+* timing
+* collaboration context
+* review intent
 
-The useful product is not:
-> “generate a cool frame”
+The useful product is not just “generate a cool frame.”
 
 The useful product is:
-- keep the board organized
-- preserve intent
-- plan the next pass
-- revise without resetting
-- hand off work cleanly
-- stay usable when AI workflows hit edge cases
+
+* keep the board organized
+* preserve intent
+* plan the next pass
+* revise without resetting
+* hand off work cleanly
+* stay usable when AI workflows hit edge cases
 
 ---
 
-## 🛠️ What SketchMotion Does
+## What SketchMotion Does
 
 SketchMotion gives creative teams one place to:
 
-✅ manage boards  
-✅ sketch frames directly on canvas  
-✅ polish rough sketches into cleaner visuals  
-✅ run storyboard-aware planning  
-✅ add revision guidance and rerun planning  
-✅ generate style-aware video from board imagery  
-✅ share boards publicly in read-only mode  
-✅ review outputs through a dedicated export flow  
+* manage boards
+* sketch frames directly on canvas
+* polish rough sketches into cleaner visuals
+* run storyboard-aware planning
+* add revision guidance and rerun planning
+* generate style-aware video from board imagery
+* share boards publicly in read-only mode
+* review outputs through a dedicated export flow
 
 ---
 
-## 🔄 Core Workflow
+## Core Workflow
 
-### 1. 📝 Build the board
+### 1. Build the board
+
 Create a board and organize frames on the canvas.
 
-### 2. ✏️ Sketch directly in-frame
+### 2. Sketch directly in-frame
+
 Draw rough ideas inside the frame editor.
 
-### 3. 🎨 AI polish
+### 3. AI polish
+
 Turn rough sketches into cleaner visuals while preserving the scene and composition.
 
-### 4. 🧠 Plan the next pass
-Run the planning workflow to generate:
-- storyboard analysis
-- shot plan
-- continuity guidance
-- render strategy
+### 4. Plan the next pass
 
-### 5. 🔁 Revise and rerun
+Run the planning workflow to generate:
+
+* storyboard analysis
+* shot plan
+* continuity guidance
+* render strategy
+
+### 5. Revise and rerun
+
 Add targeted revision input and update the plan without throwing away prior work.
 
-### 6. 🎥 Generate motion
+### 6. Generate motion
+
 Create style-aware video in different output formats like landscape or vertical.
 
-### 7. 🌍 Share and export
+### 7. Share and export
+
 Open boards in public read-only mode and use export as the finishing surface.
 
 ---
 
-## 🌟 Why SketchMotion Is Different
+## Why SketchMotion Is Different
 
-SketchMotion is **not** a generic AI prompt box wrapped in pretty UI.
+SketchMotion is not a generic AI prompt box wrapped in UI.
 
-### 🎞️ Storyboard-first
+### Storyboard-first
+
 The board is the source of truth. Frames, sequence, continuity, and revision all stay attached to it.
 
-### 🧭 Planning is visible
+### Planning is visible
+
 The planning workflow produces readable analysis, shot structure, continuity rules, and render strategy inside the product.
 
-### 🔁 Revision is part of the system
+### Revision is part of the system
+
 You can revise and rerun instead of restarting from zero every time feedback lands.
 
-### 🎬 Motion is tied to board state
+### Motion is tied to board state
+
 Video generation inherits real board context, including frame readiness and style direction.
 
-### 🧱 It behaves like a real workspace
+### It behaves like a real workspace
+
 Auth, persistence, sharing, export, guardrails, and failure handling are part of the actual product.
 
 ---
 
-## 🖥️ Product Surfaces
+## Product Surfaces
 
-- **Dashboard** — board management and saved work
-- **Canvas** — arrange, sketch, connect, and edit frames
-- **Planning Workflow** — analysis, shot plan, continuity, revision
-- **Share Flow** — public read-only board access
-- **Export Page** — output review and finishing surface
+* **Dashboard** — board management and saved work
+* **Canvas** — arrange, sketch, connect, and edit frames
+* **Planning Workflow** — analysis, shot plan, continuity, revision
+* **Share Flow** — public read-only board access
+* **Export Page** — output review and finishing surface
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
-```mermaid
-flowchart LR
-  User["🎨 Creative Team"] --> App["🖥️ SketchMotion Web App<br/>React + TypeScript + Vite"]
+### Frontend
 
-  App --> Auth["🔐 Supabase Auth"]
-  App --> DB["🗄️ Supabase Postgres"]
-  App --> Storage["📦 Supabase Storage"]
-  App --> Realtime["⚡ Supabase Realtime / Presence"]
-  App --> Edge["🧩 Supabase Edge Functions"]
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Radix primitives
 
-  Edge --> Plan["🧠 storyboard-plan"]
-  Edge --> Polish["🎨 polish-sketch"]
-  Edge --> VideoStart["🎥 generate-video"]
-  Edge --> VideoPoll["🔄 check-video-status"]
+### Platform
 
-  Plan --> GLM["🤖 Z.AI coding endpoint<br/>glm-5.1"]
-  Polish --> ReplicatePolish["🖼️ Replicate<br/>FLUX Kontext Pro"]
-  VideoStart --> ReplicateVideo["🎞️ Replicate<br/>Seedance 2.0 Fast"]
-  VideoPoll --> ReplicateVideo
+* Supabase Auth
+* Supabase Postgres
+* Supabase Storage
+* Supabase Realtime / Presence
+* Supabase Edge Functions
 
-  Here’s a more alive, polished README version with emojis, stronger framing, your **live app link**, your **demo video link**, and a cleaner architecture section.
+### AI and Media
 
+* **Storyboard planning:** GLM 5.1 through the Z.AI coding endpoint
+* **Image polish:** Replicate / FLUX Kontext Pro
+* **Video generation:** Replicate / Seedance 2.0 Fast
+* **Prompt generation:** deterministic local prompt builder with extensible provider routing
 
-## ⚙️ Tech Stack
+### Runtime Flow
+
+1. User works in the SketchMotion web app
+2. Auth and persistence run through Supabase
+3. Storyboard planning calls the `storyboard-plan` edge function
+4. Image polish calls the `polish-sketch` edge function
+5. Video generation calls `generate-video`
+6. Video polling uses `check-video-status`
+7. Planning is powered by GLM 5.1
+8. Image and video generation are powered by Replicate-backed providers
+
+---
+
+## Tech Stack
 
 ### Frontend
 
@@ -206,13 +224,13 @@ flowchart LR
 
 * TestSprite-generated Playwright flows
 * two-round product hardening approach
-* core workflow coverage + edge/failure handling
+* core workflow coverage plus edge and failure handling
 
 ---
 
-## 🧪 Tested With TestSprite
+## Tested With TestSprite
 
-This submission was strengthened through **real TestSprite-driven iteration**, not just cosmetic testing.
+This submission was strengthened through real TestSprite-driven iteration, not just cosmetic testing.
 
 ### Round 1
 
@@ -221,7 +239,7 @@ Core user journeys:
 * landing page
 * auth
 * protected dashboard
-* board creation/opening
+* board creation and opening
 * frame editing
 * AI polish
 * video entry points
@@ -233,7 +251,7 @@ Core user journeys:
 Edge and failure handling:
 
 * provider failure states
-* missing image / missing metadata guards
+* missing image and missing metadata guards
 * export empty state
 * invalid board state
 * persistence after refresh
@@ -245,30 +263,34 @@ Edge and failure handling:
 TestSprite helped harden:
 
 * polish trigger accessibility
-* share/copy stability
+* share and copy stability
 * provider failure UX
 * video readiness guards
 * export empty-state handling
 * insufficient-input planning guards
-* canvas drag / pan / connect behavior
+* canvas drag, pan, and connect behavior
 
-📁 See: `testsprite_tests/`
-📝 See also: `testsprite_tests/BUG_FIX_LOG.md`
-📘 And: `testsprite_tests/TESTING_STRATEGY.md`
+See:
+
+* `testsprite_tests/`
+* `testsprite_tests/BUG_FIX_LOG.md`
+* `testsprite_tests/TESTING_STRATEGY.md`
 
 ---
 
-## 🚀 Live Demo
+## Deployment
 
-### 🌐 Production
+### Production
 
 [https://sketch-motion-main.vercel.app](https://sketch-motion-main.vercel.app)
 
-### 🎥 Demo Video
+### Demo Video
 
 [https://www.youtube.com/watch?v=7nRd42cjbdw](https://www.youtube.com/watch?v=7nRd42cjbdw)
 
-### Suggested demo path
+---
+
+## Suggested Demo Flow
 
 1. Sign in
 2. Open the dashboard
@@ -283,7 +305,7 @@ TestSprite helped harden:
 
 ---
 
-## 🧭 Running Locally
+## Running Locally
 
 ### 1. Install dependencies
 
@@ -339,7 +361,7 @@ Deploy:
 npm run dev
 ```
 
-For stable preview:
+For stable local preview:
 
 ```bash
 npx tsc --noEmit
@@ -349,29 +371,34 @@ npx vite preview --port 5173
 
 ---
 
-## 📌 Known Limitations
+## Known Limitations
 
 * planning quality improves when storyboard metadata is stronger
 * motion generation is currently a board-driven downstream step, not full multi-shot orchestration
 * some optional legacy provider paths remain configurable, but the current reliable path uses the migrated planning and media stack
-* the checked-in frontend suite is strong for product behavior, but not a substitute for broader load or model-quality benchmarking
+* the checked-in frontend suite is strong for product behavior, but it is not a substitute for broader load or model-quality benchmarking
 
 ---
 
-## 🏁 Why This Submission Is Strong
+## Why This Submission Is Strong
 
 SketchMotion stands out because it behaves like a real product:
 
-* ✅ real auth and persistence
-* ✅ real storyboard canvas workflow
-* ✅ planning integrated into the working UI
-* ✅ image polish and motion generation
-* ✅ share and export surfaces
-* ✅ visible handling for failure states
-* ✅ genuine TestSprite usage with product improvements
+* real auth and persistence
+* real storyboard canvas workflow
+* planning integrated into the working UI
+* image polish and motion generation
+* share and export surfaces
+* visible handling for failure states
+* genuine TestSprite usage with product improvements
 
 This is not a one-click toy demo.
 
 It is a storyboard-first creative workflow that was built, tested, and hardened like real software.
+
+---
+
+
+
 
 
