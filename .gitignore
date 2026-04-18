@@ -1,0 +1,46 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+!node_modules/.vite
+
+**/tempobook/dynamic/
+**/tempobook/storyboards/
+
+core
+
+.github/
+
+**/tempobook/**
+.env
+
+.vercel
+
+# TestSprite transient artifacts
+testsprite_tests/tmp/
+testsprite_tests/**/__pycache__/
+testsprite_tests/**/*.pyc
+
+# Supabase local CLI metadata
+supabase/.temp/
